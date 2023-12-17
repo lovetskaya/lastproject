@@ -7,6 +7,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     display: flex;
+
 }
 .flex-element{
     width: 100px;
@@ -19,9 +20,13 @@ body{
     background-position: center;
     background-attachment: fixed;
     padding-top: 40px;
-    padding-bottom: 90px;
-    position: absolute;
-    margin-top: 110px;
+    padding-bottom: 40px;
+    margin-top: 200px;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
 }
 .fgh{
     margin: 30px;
@@ -51,7 +56,7 @@ flex-shrink: 0;
 
 .two-div-top{
 background-color: #ab40dd;
-margin-top: 400px;
+margin-top: 600px;
 position: fixed;
   top: 0;
   left: 0;
