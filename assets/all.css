@@ -13,6 +13,8 @@
     background-color: #f5e0ff;
     height: 100%;
   }
+
+
   .flex-conteiner {
     background-color: #eabdff;
     display: flex;
@@ -93,7 +95,32 @@
         width: 100px;
     }  
 
+  .stylediv{
+    width: 450px;
+        height: 350px;
+        background-color: #D9D9D9;
+        margin: 50px;
+        position: absolute;
+  }
+  .stylediv2{
+    width: 250px;
+        height: 350px;
+        background-color: #D9D9D9;
+        margin-left: 650px;
+        margin-top: 50px;
+        position: absolute;
+  }
+  .stylediv3{
+    width: 250px;
+        height: 350px;
+        background-color: #D9D9D9;
+        margin-left: 1100px;
+        margin-top: 50px;
+        position: absolute;
 
+  }
+
+  
 
 /*видео*/
     .bgvideo {
