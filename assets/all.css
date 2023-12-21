@@ -31,13 +31,18 @@
   .two-div-top {
     background-color: #DEE4FA;
     width: 100%;
-    height: 750px;
+    height: auto;
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
   
   }
   .link {
-    width: 154px;
-    height: 25px;
+    width: 200px;
+    height: 40px;
     flex-shrink: 0;
     color: #000;
     font-family: Roboto;
@@ -45,6 +50,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 34px;
+border-radius: 20px;
   }
   main {
     width: 100%;
@@ -74,53 +80,188 @@
         background-color: #DEE4FA;;
          width: 100%;
         height: 100px;
-        padding-top: 70px;
+        padding-top: 20px;
         box-sizing: border-box;
         margin-top: 80px;
       
       }
-    
+      .mid{
+        width: 500px;
+	    margin: 0 auto;
+	  background: rgba(211, 47, 47, 0.5);
+    border-radius: 20px;
+  }
+  .mid1{
+    width: 700px;
+  margin: 0 auto;
+background: rgba(42, 228, 228, 0.5);
+padding:10px;
+border-radius: 20px;
+}
       .footerblack-div-top {
         background-color: #000000;
         width: 100%;
         height: 30px;
-        box-sizing: border-box;
+text-align: center;
+color: aliceblue;
       }
 
       .inlain-flex-conteiner{
         background-color: #eabdff;
-        display: inlain-flex;
+
     }  
       .flex-element1{
         width: 100px;
     }  
 
-  .stylediv{
-    width: 450px;
-        height: 350px;
-        background-color: #D9D9D9;
-        margin: 50px;
-        position: absolute;
-  }
-  .stylediv2{
-    width: 250px;
-        height: 350px;
-        background-color: #D9D9D9;
-        margin-left: 650px;
-        margin-top: 50px;
-        position: absolute;
-  }
-  .stylediv3{
-    width: 250px;
-        height: 350px;
-        background-color: #D9D9D9;
-        margin-left: 1100px;
-        margin-top: 50px;
-        position: absolute;
+    .inline {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
 
-  }
+    .middle {
+        width: 450px;
+        height: 350px;
+    }
 
-  
+    .little {
+        width: 250px;
+        height: 350px;
+    }
+
+    .middle, .little {
+        background-color: #D9D9D9;
+        transition: 0.5s;
+    }
+
+    .middle:hover {
+        cursor: pointer;
+        width: 472.5px;
+        height: 367.5px;
+        transition: 0.5s;
+
+        .stylediv {
+            width: 420px;
+            height: 315px;
+        }
+    }
+
+    .little:hover {
+        cursor: pointer;
+        width: 275px;
+        height: 385px;
+        transition: 0.5s;
+        
+        .stylediv2, .stylediv3 {
+            width: 220px;
+            height: 275px;
+        }
+    }
+
+    .little, .middle h2 {
+        text-align: center;
+    }
+
+    .stylediv{
+        width: 400px;
+        height: 300px;
+        background-image: url(stray2.png);
+    }
+
+    .stylediv2{
+        width: 200px;
+        height: 240px;
+        background-image: url(stray.jpg);
+    }
+
+    .stylediv3{
+        width: 200px;
+        height: 240px;
+        background-image: url(stray3.png);
+    }
+
+    .stylediv, .stylediv2, .stylediv3 {
+        background-size: cover;
+        background-position: center;
+        margin: 25px;
+        transition: 0.5s;
+        border-radius: 20px;
+    }
+
+    .slider {
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+        border: 25px solid #d17878;
+        align-self: center;
+        position: relative;
+        transition: 0.5s;
+        border-radius: 20px;
+    }
+
+    .navigation {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    .bar {
+        height: 8px;
+        width: 30px;
+        margin: 6px;
+        cursor: pointer;
+        background-color: rgb(149, 88, 88);
+        opacity: 0.5;
+        border-radius: 10px;
+        transition: all 0.4s ease;
+    }
+
+    .bar:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    input[name="r"] {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .slides {
+        width: 400%;
+        height: 100%;
+        display: flex;
+    }
+
+    .slide {
+        width: 25%;
+        transition: all 0.6s ease;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #r1:checked ~ .s1 {
+        margin-left: 0;
+    }
+
+    #r2:checked ~ .s1 {
+        margin-left: -25%;
+    }
+
+    #r3:checked ~ .s1 {
+        margin-left: -50%;
+    }
+
+    #r4:checked ~ .s1 {
+        margin-left: -75%;
+    }
+
 
 /*видео*/
     .bgvideo {
@@ -182,9 +323,4 @@
         line-height: normal;
       }
       
-      .obj {
-        background: #d9d9d9;
-        width: 196px;
-        height: 64px;
-        flex-shrink: 0;
-      }
+ 
